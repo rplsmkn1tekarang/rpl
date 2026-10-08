@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPL - SMK Negeri 1 Tekarang</title>
+  <!-- Tag untuk menambahkan Favicon dari link gambar -->
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/FzrzDWWh/4.png">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Iframe dengan izin autoplay suara -->
+  <iframe id="webAppFrame" src="" allow="autoplay; encrypted-media"></iframe>
+
+  <script>
+    const baseUrl = "https://script.google.com/macros/s/AKfycbx8syT-FnMprw4zh-Ns388tBux849WPOEQfGyq6u3Y4-NlGxPVj_JpyVxWlKQ1I27P5PA/exec";
+    const urlParams = window.location.search;
+    document.getElementById("webAppFrame").src = baseUrl + urlParams;
+  </script>
+
+</body>
+</html>
